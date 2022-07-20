@@ -47,7 +47,8 @@ export default function UserPost() {
                     </div>
                     <div className="postStats" aria-label="estatísticas da postagem">
                         <h3>Curtido por .....</h3>
-                        <Link to=""><h4>Ver todos os N comentários</h4></Link>
+                        <h3>{post.title}</h3>
+                        <Link to=""><h4>Ver todos os n comentários</h4></Link>
                         <h5>HÁ .... HORAS</h5>
                     </div>
                 </div>
