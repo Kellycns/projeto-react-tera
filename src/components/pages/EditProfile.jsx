@@ -8,9 +8,7 @@ export default function EditProfile() {
     const [isLoading, setIsLoading] = React.useState(true);
     const {userId} =useParams();
 
-    const [user, setUser] = React.useState({
-        avatar:"",
-      });
+    const [user, setUser] = React.useState([null]);
 
       React.useEffect(() => {
         fetch(`https://62c4e487abea8c085a7e022a.mockapi.io/users/${userId}/posts`

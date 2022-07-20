@@ -11,7 +11,8 @@ import gato6 from '../../img/gato (6).jpg'
 export default function UserPost() {
     const {userId, postId} = useParams();
 
-  const [post, setPost] = React.useState(null);
+  const [post, setPost] = React.useState([]);
+
   const [isLoading, setIsLoading] = React.useState(true);
 
   React.useEffect(() => {
@@ -22,7 +23,7 @@ export default function UserPost() {
       setPost(data);
       setIsLoading(false);
     });
-  }, []);
+  }, [postId, userId]);
   return (
     <div>
         <Default/>
