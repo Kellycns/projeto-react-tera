@@ -11,6 +11,7 @@ import Feed from "./components/pages/Feed";
 import Profile from "./components/pages/Profile";
 import Registration from "./components/pages/Registration";
 import EditProfile from "./components/pages/EditProfile";
+import UserPost from "./components/pages/UserPost";
 
 import './css/reset.css';
 import './css/all.css';
@@ -30,6 +31,7 @@ function App() {
         <Route path="/user/:userId/feed" element={<Feed/>}/>
         <Route path="/user/:userId" element={<Profile />} />
         <Route path="/user/:userId/edit" element={<EditProfile/>}/>
+        <Route path="/user/:userId/post/:postId" element={<UserPost/>}/>
       </Routes>
     </BrowserRouter>
   );

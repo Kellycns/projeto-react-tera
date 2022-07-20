@@ -1,5 +1,5 @@
 import React from 'react'
-import UserPostItem from './UserPostItem'
+import {UserPostItem} from '.'
 
 export default function UserPosts(props) {
   return (
@@ -8,6 +8,7 @@ export default function UserPosts(props) {
             key={post.id}
             postId={post.id}
             image={post.image}
+            userId={post.userData.id}
         />))}
 </section>
   )

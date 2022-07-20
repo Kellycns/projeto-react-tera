@@ -45,6 +45,9 @@ body{
     justify-content: center;
     border: 1px solid rgb(109, 110, 112);
     border-radius: 10px;
+    margin-top: 20px;
+    height: 600px;
+    width: 500px;
 }
 
 .postTop{
@@ -114,7 +117,7 @@ body{
 
 
 .postStats{
-    margin-left: 30px;
+    margin-top: 10px;
 }
 
 .postStats h3{

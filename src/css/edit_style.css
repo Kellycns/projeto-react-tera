@@ -1,5 +1,7 @@
 .edit{
         padding: 60px;
+        display: flex;
+        justify-content: center;
 }
 .edit_container{
     width: 500px;
